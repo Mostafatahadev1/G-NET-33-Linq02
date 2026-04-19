@@ -78,16 +78,23 @@
 
             #region Question 5
 
-        // int[] ids = { 3, 9, 13, 18 };
-        //
-        //   var hashSet = ids.ToHashSet();
-        //
-        //   var result = ProductList
-        //           .Where(p => hashSet.Contains(p.ProductID))
-        //           .ToList();
-            
+          // int[] ids = { 3, 9, 13, 18 };
+          // 
+          //    var hashSet = ids.ToHashSet();
+          // 
+          //    var result = ProductList
+          //            .Where(p => hashSet.Contains(p.ProductID))
+          //            .ToList();
 
-            #endregion
+          
+
+            // anather answer
+
+                // bool exists = ids.Contains(9);
+                //
+                // Console.WriteLine(exists);
+
+                #endregion
 
         }
     }
