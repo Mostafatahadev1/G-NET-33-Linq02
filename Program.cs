@@ -20,15 +20,32 @@
 
             #region Question 1 Get Top 3 Expensive Products
 
-          //  var Top3ExpensiveProducts = ProductList
-          //      .OrderByDescending(p => p.UnitPrice)
-          //      .Take(3);
-          //
-          //  foreach (var product in Top3ExpensiveProducts)
-          //  {
-          //      Console.WriteLine($"Name: {product.Name}, Price: {product.UnitPrice}");
-          //  }
+            //  var Top3ExpensiveProducts = ProductList
+            //      .OrderByDescending(p => p.UnitPrice)
+            //      .Take(3);
+            //
+            //  foreach (var product in Top3ExpensiveProducts)
+            //  {
+            //      Console.WriteLine($"Name: {product.Name}, Price: {product.UnitPrice}");
+            //  }
 
+
+            #endregion
+
+            #region Question 2  Show page 2 with Page size 3
+           //int pageNumber = 2;
+           //int pageSize = 5;
+           //
+           //var result = ProductList
+           //    .OrderBy(p => p.Name)
+           //    .Skip((pageNumber - 1) * pageSize) 
+           //    .Take(pageSize)
+           //    .ToList();
+           //
+           //foreach (var product in result)
+           //{
+           //    Console.WriteLine(product.Name);
+           //}
 
             #endregion
 
