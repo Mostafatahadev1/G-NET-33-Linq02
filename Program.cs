@@ -97,20 +97,42 @@
             #endregion
 
             #region Question 6
-           // var GroupedProduct = ProductList
-           //  .GroupBy(p => p.Category)
-           //  .Select(g => new
-           //         {
-           //             Category = g.Key,
-           //             Count = g.Count()
-           //         });
-           //
-           // foreach (var item in GroupedProduct)
-           // {
-           //     Console.WriteLine($"Category: {item.Category} - Count: {item.Count}");
-           // }
-           //
+            // var GroupedProduct = ProductList
+            //  .GroupBy(p => p.Category)
+            //  .Select(g => new
+            //         {
+            //             Category = g.Key,
+            //             Count = g.Count()
+            //         });
+            //
+            // foreach (var item in GroupedProduct)
+            // {
+            //     Console.WriteLine($"Category: {item.Category} - Count: {item.Count}");
+            // }
+            //
             #endregion
+
+            #region Question 7
+          //  var GroupByName = ProductList
+          //       .GroupBy(p => p.Category)
+          //       .Select(g => new
+          //           {
+          //               Category = g.Key,
+          //               Names = g.Select(p => p.Name)
+          //           });
+          //
+          //  foreach (var group in GroupByName)
+          //  {
+          //      Console.WriteLine($"Category: {group.Category}");
+          //
+          //      foreach (var name in group.Names)
+          //      {
+          //          Console.WriteLine($"   - {name}");
+          //      }
+          //  }
+            #endregion
+
+
 
 
 
