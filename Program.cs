@@ -4,7 +4,35 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            #region Product List
+            var ProductList = new List<Product>
+            {
+                new Product { Name = "Chai", UnitPrice = 18, UnitsInStock = 39, Category = "Beverages" },
+                new Product { Name = "Chang", UnitPrice = 19, UnitsInStock = 17, Category = "Beverages" },
+                new Product { Name = "Aniseed Syrup", UnitPrice = 10, UnitsInStock = 13, Category = "Condiments" },
+                new Product { Name = "Chef Anton's Cajun Seasoning", UnitPrice = 22, UnitsInStock = 53, Category = "Condiments" },
+                new Product { Name = "Ikura", UnitPrice = 31, UnitsInStock = 20, Category = "Seafood" },
+                new Product { Name = "Konbu", UnitPrice = 6, UnitsInStock = 24, Category = "Seafood" },
+                new Product { Name = "Tofu", UnitPrice = 23, UnitsInStock = 0, Category = "Produce" }
+            };
+            #endregion
+
+            #region Question 1 Get Top 3 Expensive Products
+
+          //  var Top3ExpensiveProducts = ProductList
+          //      .OrderByDescending(p => p.UnitPrice)
+          //      .Take(3);
+          //
+          //  foreach (var product in Top3ExpensiveProducts)
+          //  {
+          //      Console.WriteLine($"Name: {product.Name}, Price: {product.UnitPrice}");
+          //  }
+
+
+            #endregion
+
+
         }
     }
 }
