@@ -238,13 +238,92 @@
             #endregion
 
             #region Question 15
-          // var dict = ProductList.ToDictionary(p => p.ProductID);
-          //
-          // var product18 = dict[18];
-          //
-          // Console.WriteLine($"ID: {product18.ProductID}");
-          // Console.WriteLine($"Name: {product18.Name}");
-          // Console.WriteLine($"Price: {product18.UnitPrice}");
+            // var dict = ProductList.ToDictionary(p => p.ProductID);
+            //
+            // var product18 = dict[18];
+            //
+            // Console.WriteLine($"ID: {product18.ProductID}");
+            // Console.WriteLine($"Name: {product18.Name}");
+            // Console.WriteLine($"Price: {product18.UnitPrice}");
+            #endregion
+
+            #region Question 16
+            // var GetHighFirstPG = ProductList.FirstOrDefault(p => p.UnitPrice > 50);
+            //
+            // if (GetHighFirstPG != null)
+            // {
+            //     Console.WriteLine($"Name: {GetHighFirstPG.Name}, Price: {GetHighFirstPG.UnitPrice}");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("No product found");
+            // }
+            #endregion
+
+            #region Question 17
+            //  var q17 = ProductList.FirstOrDefault(p => p.UnitPrice > 500);
+            //
+            //  if (q17 != null)
+            //  {
+            //      Console.WriteLine($"Name: {q17.Name}, Price: {q17.UnitPrice}");
+            //  }
+            //  else
+            //  {
+            //      Console.WriteLine("No product found");
+            //  }
+            #endregion
+
+            #region Question 18
+            // var multiplication = Enumerable.Range(1, 10)
+            //     .Select(i => $"7 x {i} = {7 * i}");
+            //
+            // foreach (var line in multiplication)
+            // {
+            //     Console.WriteLine(line);
+            // }
+            #endregion
+
+            #region Question 19
+            // var EvenNumber = Enumerable.Range(1, 30)
+            //         .Where(x => x % 2 == 0);
+            //
+            //
+            // foreach (var num in EvenNumber)
+            // {
+            //     Console.WriteLine(num);
+            // }
+            //
+            #endregion
+
+            #region Question 20
+            //var productNames = ProductList
+            //    .Select(p => p.Name)
+            //    .Take(3);
+            //
+            //var customerNames = CustomerList
+            //    .Select(c => c.CompanyName)
+            //    .Take(3);
+            //
+            //var result = productNames
+            //    .Concat(customerNames);
+            //
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+
+            #region Question 21
+
+            //ar result = ProductList
+            //Zip(CustomerList, (product, customer) =>
+            //       $"{product.Name} sold to {customer.CompanyName}");
+            //
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion
         }
     }
