@@ -186,13 +186,26 @@
             #endregion
 
             #region Question 11
-           // var MinPrice = ProductList
-           //     .Min(p => p.UnitPrice);
-           // var MaxPrice = ProductList .Max(p=> p.UnitPrice);
-           //
-           // Console.WriteLine($"Cheapest Price = {MinPrice}");
-           // Console.WriteLine($"Most Expensive Price = {MaxPrice}");
+            // var MinPrice = ProductList
+            //     .Min(p => p.UnitPrice);
+            // var MaxPrice = ProductList .Max(p=> p.UnitPrice);
+            //
+            // Console.WriteLine($"Cheapest Price = {MinPrice}");
+            // Console.WriteLine($"Most Expensive Price = {MaxPrice}");
 
+            #endregion
+
+            #region Question 12
+           // var DistinctList = ProductList
+           //     .Select(p => p.Category)
+           //     .Distinct()
+           //     .ToList();
+           //
+           //
+           // foreach  (var category in DistinctList)
+           // {
+           //     Console.WriteLine(category);
+           // }
             #endregion
 
 
