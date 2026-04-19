@@ -25,6 +25,17 @@
 };
             #endregion
 
+            #region Costumers List
+            var CustomerList = new List<Customer>
+                {
+                    new Customer { CompanyName = "A Co", Country = "Germany", TotalOrderValue = 1000 },
+                    new Customer { CompanyName = "B Co", Country = "France", TotalOrderValue = 2000 },
+                    new Customer { CompanyName = "C Co", Country = "UK", TotalOrderValue = 1500 },
+                    new Customer { CompanyName = "D Co", Country = "Germany", TotalOrderValue = 700 },
+                    new Customer { CompanyName = "E Co", Country = "France", TotalOrderValue = 1200 }
+                };
+            #endregion
+
             #region Question 1 Get Top 3 Expensive Products
 
             //  var Top3ExpensiveProducts = ProductList
@@ -113,27 +124,57 @@
             #endregion
 
             #region Question 7
-          //  var GroupByName = ProductList
-          //       .GroupBy(p => p.Category)
-          //       .Select(g => new
-          //           {
-          //               Category = g.Key,
-          //               Names = g.Select(p => p.Name)
-          //           });
-          //
-          //  foreach (var group in GroupByName)
-          //  {
-          //      Console.WriteLine($"Category: {group.Category}");
-          //
-          //      foreach (var name in group.Names)
-          //      {
-          //          Console.WriteLine($"   - {name}");
-          //      }
-          //  }
+            //  var GroupByName = ProductList
+            //       .GroupBy(p => p.Category)
+            //       .Select(g => new
+            //           {
+            //               Category = g.Key,
+            //               Names = g.Select(p => p.Name)
+            //           });
+            //
+            //  foreach (var group in GroupByName)
+            //  {
+            //      Console.WriteLine($"Category: {group.Category}");
+            //
+            //      foreach (var name in group.Names)
+            //      {
+            //          Console.WriteLine($"   - {name}");
+            //      }
+            //  }
             #endregion
 
 
+            #region Question 8
 
+            //  var GroupByFilter = ProductList
+            //       .GroupBy(p => p.Category)
+            //       .Where(g => g.Count() > 3)
+            //       .Select(g => g.Key);
+            //  foreach (var category in GroupByFilter)
+            //  {
+            //      Console.WriteLine(category);
+            //  }
+
+            #endregion
+
+
+            #region Question 9
+
+            // var GroupByCountryToTalOrder =
+            //      from c in CustomerList
+            //      group c by c.Country into g
+            //      select new
+            //      {
+            //          Country = g.Key,
+            //          Count = g.Count(),
+            //          TotalOrderValue = g.Sum(x => x.TotalOrderValue)
+            //      };
+            //
+            // foreach (var item in GroupByCountryToTalOrder)
+            // {
+            //     Console.WriteLine($"Country: {item.Country} | Count: {item.Count} | Total: {item.TotalOrderValue}");
+            // }
+            #endregion
 
 
         }
