@@ -69,11 +69,24 @@
             #endregion
 
             #region Question 4
-           // bool allInStock = ProductList
-           //        .Where(p => p.Category == "Seafood")
-           //        .All(p => p.UnitsInStock > 0);
-           //
-           // Console.WriteLine(allInStock);
+            // bool allInStock = ProductList
+            //        .Where(p => p.Category == "Seafood")
+            //        .All(p => p.UnitsInStock > 0);
+            //
+            // Console.WriteLine(allInStock);
+            #endregion
+
+            #region Question 5
+
+        // int[] ids = { 3, 9, 13, 18 };
+        //
+        //   var hashSet = ids.ToHashSet();
+        //
+        //   var result = ProductList
+        //           .Where(p => hashSet.Contains(p.ProductID))
+        //           .ToList();
+            
+
             #endregion
 
         }
