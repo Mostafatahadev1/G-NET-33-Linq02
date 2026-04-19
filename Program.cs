@@ -185,6 +185,16 @@
 
             #endregion
 
+            #region Question 11
+           // var MinPrice = ProductList
+           //     .Min(p => p.UnitPrice);
+           // var MaxPrice = ProductList .Max(p=> p.UnitPrice);
+           //
+           // Console.WriteLine($"Cheapest Price = {MinPrice}");
+           // Console.WriteLine($"Most Expensive Price = {MaxPrice}");
+
+            #endregion
+
 
         }
     }
