@@ -209,18 +209,33 @@
             #endregion
 
             #region Question 13
-           // int[] setA = { 1, 3, 5, 7, 9, 11, 13 };
-           // int[] setB = { 3, 6, 9, 12, 15, 13 };
-           //
-           // var AnotB = setA.Except(setB);
-           //
-           // foreach (var item in AnotB)
-           // {
-           //     Console.WriteLine(item);
-           // }
+            // int[] setA = { 1, 3, 5, 7, 9, 11, 13 };
+            // int[] setB = { 3, 6, 9, 12, 15, 13 };
+            //
+            // var AnotB = setA.Except(setB);
+            //
+            // foreach (var item in AnotB)
+            // {
+            //     Console.WriteLine(item);
+            // }
 
             #endregion
 
+
+            #region Question 14
+          // string[] list1 = { "Germany", "France", "UK", "Spain" };
+          // string[] list2 = { "france", "SPAIN", "Italy" };
+          //
+          //
+          // var q14 = list1.Where(c =>
+          //     !list2.Any(x => x.Equals(c, StringComparison.OrdinalIgnoreCase)));
+          //
+          // foreach (var country in q14)
+          // {
+          //     Console.WriteLine(country);
+          // }
+
+            #endregion
 
         }
     }
