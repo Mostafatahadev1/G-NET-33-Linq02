@@ -176,6 +176,15 @@
             // }
             #endregion
 
+            #region Question 10
+
+            //  var TotalNumberOfUnitOfStock = ProductList
+            //      .Sum(p => p.UnitsInStock);
+            //
+            //  Console.WriteLine($"Total Units In Stock = {TotalNumberOfUnitOfStock}");
+
+            #endregion
+
 
         }
     }
