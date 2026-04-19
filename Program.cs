@@ -57,15 +57,23 @@
             #endregion
 
             #region Question 3 
-         //   var result = ProductList
-         //        .OrderBy(p => p.UnitPrice)
-         //        .TakeWhile(p => p.UnitPrice < 25)
-         //        .ToList();
-         //
-         //   foreach (var product in result)
-         //   {
-         //       Console.WriteLine($"Name: {product.Name}, Price: {product.UnitPrice}");
-         //   }
+            //   var result = ProductList
+            //        .OrderBy(p => p.UnitPrice)
+            //        .TakeWhile(p => p.UnitPrice < 25)
+            //        .ToList();
+            //
+            //   foreach (var product in result)
+            //   {
+            //       Console.WriteLine($"Name: {product.Name}, Price: {product.UnitPrice}");
+            //   }
+            #endregion
+
+            #region Question 4
+           // bool allInStock = ProductList
+           //        .Where(p => p.Category == "Seafood")
+           //        .All(p => p.UnitsInStock > 0);
+           //
+           // Console.WriteLine(allInStock);
             #endregion
 
         }
