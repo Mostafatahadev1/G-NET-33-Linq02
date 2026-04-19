@@ -7,15 +7,22 @@
 
             #region Product List
             var ProductList = new List<Product>
-            {
-                new Product { Name = "Chai", UnitPrice = 18, UnitsInStock = 39, Category = "Beverages" },
-                new Product { Name = "Chang", UnitPrice = 19, UnitsInStock = 17, Category = "Beverages" },
-                new Product { Name = "Aniseed Syrup", UnitPrice = 10, UnitsInStock = 13, Category = "Condiments" },
-                new Product { Name = "Chef Anton's Cajun Seasoning", UnitPrice = 22, UnitsInStock = 53, Category = "Condiments" },
-                new Product { Name = "Ikura", UnitPrice = 31, UnitsInStock = 20, Category = "Seafood" },
-                new Product { Name = "Konbu", UnitPrice = 6, UnitsInStock = 24, Category = "Seafood" },
-                new Product { Name = "Tofu", UnitPrice = 23, UnitsInStock = 0, Category = "Produce" }
-            };
+{
+                new Product { ProductID = 1, Name = "Chai", UnitPrice = 18, UnitsInStock = 39, Category = "Beverages" },
+                new Product { ProductID = 2, Name = "Chang", UnitPrice = 19, UnitsInStock = 17, Category = "Beverages" },
+                new Product { ProductID = 3, Name = "Aniseed Syrup", UnitPrice = 10, UnitsInStock = 13, Category = "Condiments" },
+                new Product { ProductID = 4, Name = "Chef Anton", UnitPrice = 22, UnitsInStock = 53, Category = "Condiments" },
+                new Product { ProductID = 5, Name = "Ikura", UnitPrice = 31, UnitsInStock = 20, Category = "Seafood" },
+                new Product { ProductID = 6, Name = "Konbu", UnitPrice = 6, UnitsInStock = 24, Category = "Seafood" },
+                new Product { ProductID = 7, Name = "Tofu", UnitPrice = 23, UnitsInStock = 0, Category = "Produce" },
+                new Product { ProductID = 8, Name = "Pavlova", UnitPrice = 45, UnitsInStock = 10, Category = "Desserts" },
+                new Product { ProductID = 9, Name = "Alice Mutton", UnitPrice = 39, UnitsInStock = 0, Category = "Meat" },
+                new Product { ProductID = 10, Name = "Carnarvon Tigers", UnitPrice = 62, UnitsInStock = 42, Category = "Seafood" },
+                new Product { ProductID = 11, Name = "Teatime Chocolate", UnitPrice = 9, UnitsInStock = 25, Category = "Desserts" },
+                new Product { ProductID = 12, Name = "Sir Rodney", UnitPrice = 81, UnitsInStock = 5, Category = "Confections" },
+                new Product { ProductID = 13, Name = "Gnocchi", UnitPrice = 38, UnitsInStock = 21, Category = "Grains" },
+                new Product { ProductID = 18, Name = "Maxilaku", UnitPrice = 20, UnitsInStock = 15, Category = "Confections" }
+};
             #endregion
 
             #region Question 1 Get Top 3 Expensive Products
@@ -33,22 +40,33 @@
             #endregion
 
             #region Question 2  Show page 2 with Page size 3
-           //int pageNumber = 2;
-           //int pageSize = 5;
-           //
-           //var result = ProductList
-           //    .OrderBy(p => p.Name)
-           //    .Skip((pageNumber - 1) * pageSize) 
-           //    .Take(pageSize)
-           //    .ToList();
-           //
-           //foreach (var product in result)
-           //{
-           //    Console.WriteLine(product.Name);
-           //}
+            //int pageNumber = 2;
+            //int pageSize = 5;
+            //
+            //var result = ProductList
+            //    .OrderBy(p => p.Name)
+            //    .Skip((pageNumber - 1) * pageSize) 
+            //    .Take(pageSize)
+            //    .ToList();
+            //
+            //foreach (var product in result)
+            //{
+            //    Console.WriteLine(product.Name);
+            //}
 
             #endregion
 
+            #region Question 3 
+         //   var result = ProductList
+         //        .OrderBy(p => p.UnitPrice)
+         //        .TakeWhile(p => p.UnitPrice < 25)
+         //        .ToList();
+         //
+         //   foreach (var product in result)
+         //   {
+         //       Console.WriteLine($"Name: {product.Name}, Price: {product.UnitPrice}");
+         //   }
+            #endregion
 
         }
     }

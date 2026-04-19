@@ -8,9 +8,11 @@ namespace G_NET_33_Linq02
 {
     public class Product
     {
+        public int ProductID { get; set; }
         public string Name { get; set; }
         public double UnitPrice { get; set; }
         public int UnitsInStock { get; set; }
         public string Category { get; set; }
+
     }
 }
