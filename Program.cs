@@ -78,23 +78,41 @@
 
             #region Question 5
 
-          // int[] ids = { 3, 9, 13, 18 };
-          // 
-          //    var hashSet = ids.ToHashSet();
-          // 
-          //    var result = ProductList
-          //            .Where(p => hashSet.Contains(p.ProductID))
-          //            .ToList();
+            // int[] ids = { 3, 9, 13, 18 };
+            // 
+            //    var hashSet = ids.ToHashSet();
+            // 
+            //    var result = ProductList
+            //            .Where(p => hashSet.Contains(p.ProductID))
+            //            .ToList();
 
-          
+
 
             // anather answer
 
-                // bool exists = ids.Contains(9);
-                //
-                // Console.WriteLine(exists);
+            // bool exists = ids.Contains(9);
+            //
+            // Console.WriteLine(exists);
 
-                #endregion
+            #endregion
+
+            #region Question 6
+           // var GroupedProduct = ProductList
+           //  .GroupBy(p => p.Category)
+           //  .Select(g => new
+           //         {
+           //             Category = g.Key,
+           //             Count = g.Count()
+           //         });
+           //
+           // foreach (var item in GroupedProduct)
+           // {
+           //     Console.WriteLine($"Category: {item.Category} - Count: {item.Count}");
+           // }
+           //
+            #endregion
+
+
 
         }
     }
